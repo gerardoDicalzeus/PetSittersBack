@@ -1,0 +1,33 @@
+{
+  "name": "AsignacionPetstypePetsitter",
+  "plural": "AsignacionPetstypePetsitters",
+  "base":"PersistedModel",
+  "Idinjection": true,
+  "properties": {
+      "id": {
+        "type": "number",
+        "required": true
+      },
+      "petsitter_id": {
+        "type": "number",
+        "required": true
+      },
+      "petstype_id": {
+        "type": "number",
+        "required": true
+      }
+    },
+    "validations": [],
+    "relations": {
+      "PetSitter": {
+        "type": "belongsTo",
+        "model": "PetSitter",
+        "foreignKey": "petsitter_id"
+      },
+      "PetsType": {
+        "type": "belongsTo",
+        "model": "PetsType",
+        "foreignKey": "petstype_id"
+      }
+    }
+}

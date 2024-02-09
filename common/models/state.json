@@ -1,0 +1,19 @@
+{
+  "name": "State",
+  "plural": "States",
+  "base":"PersistedModel",
+  "Idinjection": true,
+  "properties": {
+      "id": {
+        "type": "number",
+        "required": true
+      },
+      "name": {
+        "type": "string",
+        "required": true
+      }
+    },
+    "validations": [],
+    "relations": {
+    }
+}

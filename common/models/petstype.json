@@ -1,0 +1,19 @@
+{
+  "name": "PetsType",
+  "plural": "PetsTypes",
+  "base":"PersistedModel",
+  "Idinjection": true,
+  "properties": {
+      "id": {
+        "type": "number",
+        "required": true
+      },
+      "description": {
+        "type": "string",
+        "required": true
+      }
+    },
+    "validations": [],
+    "relations": {
+    }
+}

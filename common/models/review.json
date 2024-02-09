@@ -1,0 +1,23 @@
+{
+  "name": "Review",
+  "plural": "Reviews",
+  "base":"PersistedModel",
+  "Idinjection": true,
+  "properties": {
+      "PettsitterId": {
+        "type": "string",
+        "required": true
+      },
+      "rating": {
+        "type": "number",
+        "required": true
+      },
+      "comments": {
+        "type": "string",
+        "required": true
+      }
+    },
+    "validations": [],
+    "relations": {
+    }
+}

@@ -1,0 +1,48 @@
+{
+  "name": "PetSitter",
+  "plural": "PetSitters",
+  "base":"PersistedModel",
+  "Idinjection": true,
+  "properties": {
+    "id":{
+      "type": "number",
+      "required": true
+    },
+      "city_id":{
+        "type": "number",
+        "required": true
+      },
+      "name": {
+        "type": "string",
+        "required": true
+      },
+      "lastname": {
+        "type": "string",
+        "required": true
+      },
+      "email":{
+        "type": "string",
+        "required": true
+      },
+      "cellphone":{
+        "type": "string",
+        "required": true
+      },
+      "photoURL": {
+        "type": "string",
+        "required": true
+      },
+      "edad": {
+        "type": "number",
+        "required": true
+      }
+    },
+    "validations": [],
+    "relations": {
+      "City": {
+        "type": "belongsTo",
+        "model": "City",
+        "foreignKey": "city_id"
+      }
+    }
+}
